@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: >-
+  If this repository helps you, you may cite it as below. It is an informal,
+  work-in-progress synthesis of published research, written with Claude, an AI
+  assistant by Anthropic. It is not an official standard, not peer-reviewed,
+  and not a new result.
+title: "business-customer (work in progress)"
+abstract: >-
+  Customer discovery and demand estimation: interviews and surveys with their biases, experiments, discrete choice models, segmentation, and a protocol shape for a customer study. Scope only; the review is not started.
+type: software
+authors:
+  - name: "Tewf"
+repository-code: "https://github.com/Tewf/business-customer"
+license:
+  - Apache-2.0
+  - CC-BY-4.0
+keywords:
+  - customer discovery
+  - demand estimation
+  - discrete choice
+  - survey methodology
+  - segmentation
+  - literature review
