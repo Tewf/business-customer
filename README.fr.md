@@ -7,9 +7,10 @@ La découverte du client et l'**estimation de la demande** : entretiens et enqu�
 
 Cette page en anglais : [README.md](README.md). Les deux versions suivent le même état.
 
-> **État (2026-11-04) :** mis en place ; rien n'est encore écrit au-delà du périmètre. Le premier travail est une revue
-> de littérature, non commencée. Le nom est provisoire jusqu'à ce que la première étape de cette revue dise comment le
-> domaine nomme la chose. Ce n'est ni une norme officielle, ni une étude relue par des pairs, ni un résultat nouveau.
+> **État (2026-11-04) :** la première revue est écrite, en première passe de 40 sources, et se termine sur une référence
+> nommée, B1. Une forme de protocole pour une étude client a un programme qui la vérifie. Le nom est gardé après l'étape
+> de cadrage ([fiche 0002](decisions/0002-keep-the-name-and-read-a-study-protocol-by-program.md)). Ce n'est ni une norme
+> officielle, ni une étude relue par des pairs, ni un résultat nouveau.
 >
 > **Comment il est fait :** avec Claude, un assistant IA d'Anthropic, sous la direction du mainteneur, comme
 > reader-ergonomics. Les corrections sont bienvenues sous forme d'issues.
@@ -68,26 +69,39 @@ digraph where_it_sits {
 | dehors | la taille d'un marché | [business-market](https://github.com/Tewf/business-market) |
 | dehors | quels biais se répliquent sur le terrain | [business-behavioral](https://github.com/Tewf/business-behavioral) |
 
-## Le premier travail : une revue de littérature
+## Ce que la revue a trouvé
 
-Non commencée. Elle suit l'ordre d'une revue de thèse, et elle est finie quand elle peut nommer la référence.
+- **Le domaine s'appelle analyse des choix discrets pour la demande, et méthodologie d'enquête pour le fait de demander.** La pratique appelle les entretiens « customer discovery ». Le nom du dépôt correspond en partie et est gardé.
+- **Un changement d'intention donne un changement d'acte plus petit.** Sur 47 tests expérimentaux, d = 0,66 d'intention a donné d = 0,36 de comportement (Webb 2006, secondaire). Un incitatif sur le choix a amélioré la prédiction de l'achat (Ding 2005, secondaire).
+- **Les entretiens d'un groupe homogène saturent vers 9 à 17.** C'est l'étendue de 23 tests (Hennink 2022, secondaire).
+  - Un estimateur de l'invisible existe pour les problèmes d'usage, avec 31 % trouvés par utilisateur (Nielsen 2000).
+  - Les groupes mêlés en demandent plus.
+- **Les résultats de choix sont fragiles au plan.** Sur 107 études environnementales, de petits changements de plan ont déplacé les résultats dans 45 % des cas avec une mesure de fiabilité.
+  - Le biais hypothétique était courant (Rakotonarivo 2016, secondaire).
+- **Aucune forme de protocole pour une étude client, ni essai d'une telle forme contre des entretiens non structurés, n'a été trouvé.** Le plus proche est un plan fixé avant les résultats (Nosek 2018, secondaire). Le seul test randomisé d'une méthode enseignée porte sur 116 jeunes entreprises (Camuffo 2020, secondaire).
 
-1. **Cadrer :** le problème en une phrase, et comment chaque domaine le nomme. Pistes à vérifier : l'analyse des choix discrets (McFadden), la littérature du développement client comme sources grises notées selon les critères de Garousi 2019, la méthodologie d'enquête et la mesure du biais hypothétique. Le dépôt peut être renommé alors.
-2. **Revue :** chaque nom, cherché par son nom académique, son acronyme et son auteur ; les synthèses d'abord.
-   - la méthodologie d'enquête et les biais d'un entretien, par leurs noms académiques et leurs auteurs, les synthèses d'abord ;
-   - les modèles de choix discrets, de l'article fondateur à un manuel actuel, avec les logiciels qui les estiment ;
-   - la pratique du développement client comme littérature grise, chaque source notée, sous le seuil un simple exemple ;
-   - les formes de protocole déjà en usage pour une étude de personnes, trouvées avant d'en écrire une.
-3. **État de l'art, et le dossier contre.**
-4. **Positionnement :** ce que ce dépôt demande et que le domaine ne répond pas déjà.
-5. **Référence :** un protocole pour une étude client écrit dans la forme que la revue trouve, avec une estimation de choix discret sur données simulées. Il est comparé à une série d'entretiens non structurés, qui est la pratique.
+## Les questions, répondues
 
-## Questions auxquelles la revue doit répondre
+| Question | Réponse | Niveau |
+|---|---|---|
+| Entretiens | environ 9 à 17 pour un segment homogène ; un modèle de Poisson et une règle à seuil estiment l'invisible | mesuré, descriptif |
+| Déclaré et révélé | d = 0,66 d'intention donne d = 0,36 de comportement ; l'écart se mesure par un acte observé après la réponse | mesuré |
+| Modèles de choix | un plan conforme aux rapports des groupes de travail et un calcul de puissance ; aucune règle pour un bien nouveau trouvée | convention |
+| Le protocole | la question, l'échantillon, l'instrument, l'ordre, l'incitatif et le plan d'analyse avant la première réponse ; un programme en vérifie trois | convention |
 
-- **Entretiens.** Combien d'entretiens faut-il à un segment avant qu'un nouveau n'apporte peu, et un estimateur de l'invisible le dit-il ?
-- **Déclaré et révélé.** De combien ce que disent les clients diffère-t-il de ce qu'ils font, et comment mesure-t-on l'écart ?
-- **Modèles de choix.** Que faut-il à une étude de choix discrets, en échantillon et en plan, pour estimer la demande d'un bien nouveau ?
-- **Le protocole.** Que doit fixer un protocole avant la première question, et qu'un programme peut-il y vérifier ?
+Les sources et les questions ouvertes sont dans [position](evidence/customer-demand/position.md).
+
+## La référence
+
+**B1** est une étude au protocole fixé avec un bras de choix discret, contre une série d'entretiens non structurés ([référence](evidence/customer-demand/baseline.md)).
+
+- L'étude est écrite dans la [forme étude client](shapes/customer-study.md) : son échantillon, l'ordre de ses questions et son incitatif sont déclarés avant le premier entretien.
+- Le bras de choix est d'abord exécuté sur des données simulées aux coefficients connus.
+
+## La forme et sa vérification
+
+- [shapes/customer-study.md](shapes/customer-study.md) est la forme d'une étude client, avec un [exemple rempli](shapes/examples/pre-order-interviews/study.md) sans aucun répondant réel.
+- La vérification `customer-study` rejette une étude qui ne déclare ni taille d'échantillon, ni ordre numéroté des questions, ni incitatif et qui le paie ; ses tests sont dans [checks/test_customer_study.py](checks/test_customer_study.py).
 
 ## Vérifier
 
@@ -105,6 +119,9 @@ master construit aussi le site, [tewf.github.io/business-customer](https://tewf.
 
 | Partie | Résumé |
 |---|---|
+| [evidence](evidence/) | la première revue, une première passe de 40 sources, qui finit sur la référence B1, et la bibliographie |
+| [shapes](shapes/) | la forme d'une étude client, avec un exemple rempli |
+| [checks/local](checks/local/) | la vérification qu'une étude déclare son échantillon, l'ordre de ses questions et son incitatif |
 | [decisions](decisions/) | une fiche par choix qui façonne ce dépôt, chacune ouvrant sur la décision en une phrase |
 
 ## Licence

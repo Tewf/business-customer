@@ -7,9 +7,10 @@ Customer discovery and **demand estimation**: interviews and surveys with their 
 
 This page in French: [README.fr.md](README.fr.md).
 
-> **Status (2026-11-04):** set up; nothing is written yet beyond the scope. The first job is a literature review, not
-> started. The name is provisional until that review's first step says what the field calls this. It is not an
-> official standard, not a peer-reviewed study and not a new result.
+> **Status (2026-11-04):** the first review is written, as a first pass of 40 sources, and ends on a named baseline,
+> B1. A protocol shape for a customer study has a program that checks it. The name is kept after the frame step
+> ([record 0002](decisions/0002-keep-the-name-and-read-a-study-protocol-by-program.md)). It is not an official
+> standard, not a peer-reviewed study and not a new result.
 >
 > **How it is made:** with Claude, an AI assistant by Anthropic, under the maintainer's direction, the way
 > reader-ergonomics was made. Corrections are welcome as issues.
@@ -68,26 +69,38 @@ digraph where_it_sits {
 | out | the size of a market | [business-market](https://github.com/Tewf/business-market) |
 | out | which biases replicate in the field | [business-behavioral](https://github.com/Tewf/business-behavioral) |
 
-## The first job: a literature review
+## What the review found
 
-Not started. It follows the order of a thesis review, and it is finished when it can name the baseline.
+- **The field's name is discrete choice analysis for demand, and survey methodology for the asking.** Practice calls the interviews customer discovery. The repository's name matches in part and is kept.
+- **A change in intention gives a smaller change in action.** Over 47 experimental tests, d = 0.66 in intention gave d = 0.36 in behaviour (Webb 2006, secondary). An incentive on the choice improved the prediction of purchase (Ding 2005, secondary).
+- **Interviews with a homogeneous group saturate at about 9 to 17.** That is the range of 23 tests (Hennink 2022, secondary).
+  - An estimator of the unseen exists for usability problems, with 31% found per user (Nielsen 2000).
+  - Mixed groups need more.
+- **Choice results are fragile to design.** In 107 environmental studies, small design changes moved the results in 45% of outcomes with a reliability measure, and hypothetical bias was common (Rakotonarivo 2016, secondary).
+- **No protocol shape for a customer study, and no trial of one against unstructured interviews, was found.** The nearest evidence is a plan fixed before the outcomes (Nosek 2018, secondary). The only randomized test of a taught method is on 116 startups (Camuffo 2020, secondary).
 
-1. **Frame:** the problem in one sentence, and what each field calls it. Leads to verify: discrete choice analysis (McFadden), the customer-development literature as grey sources scored on Garousi 2019's criteria, survey methodology, and the measurement of hypothetical bias. The repository may be renamed then.
-2. **Review:** each name, searched by its academic name, its acronym and its author; surveys first.
-   - survey methodology and the biases of an interview, by their academic names and their authors, surveys first;
-   - discrete choice models, from the seminal paper to a current textbook, with the software that estimates them;
-   - customer-development practice as grey literature, each source scored, below the threshold an example only;
-   - protocol shapes already in use for a study of people, found before one is written.
-3. **State of the art, and the case against.**
-4. **Position:** what this repository asks that the field does not already answer.
-5. **Baseline:** a protocol for one customer study written in the shape the review finds, with a discrete choice estimate on simulated data, compared with an unstructured round of interviews as the practice.
+## The questions, answered
 
-## Questions the review must answer
+| Question | Answer | Grade |
+|---|---|---|
+| Interviews | about 9 to 17 for a homogeneous segment; a Poisson model and a threshold rule estimate the unseen | measured, descriptive |
+| Stated and revealed | d = 0.66 in intention gives d = 0.36 in behaviour; the gap is measured by an action observed after the answer | measured |
+| Choice models | a design to the task-force reports and a power calculation; no rule for a new good was found | convention |
+| The protocol | the question, sample, instrument, order, incentive and analysis plan before the first answer; a program checks three of them | convention |
 
-- **Interviews.** How many interviews does a segment need before a new one adds little, and does an estimator of the unseen say so?
-- **Stated and revealed.** How far does what customers say differ from what they do, and how is the gap measured?
-- **Choice models.** What does a discrete choice study need in sample and design to estimate demand for a new good?
-- **The protocol.** What must a protocol fix before the first question, and what can a program check in it?
+The sources and the open questions are in [position](evidence/customer-demand/position.md).
+
+## The baseline
+
+**B1** is a protocol-fixed study with a discrete choice arm, against an unstructured round of interviews ([baseline](evidence/customer-demand/baseline.md)).
+
+- The study is written in the [customer-study shape](shapes/customer-study.md): its sample, its question order and its incentive are declared before the first interview.
+- The choice arm is run first on simulated data with known coefficients.
+
+## The shape and its check
+
+- [shapes/customer-study.md](shapes/customer-study.md) is the shape of a customer study, with a [filled fixture](shapes/examples/pre-order-interviews/study.md) that holds no real respondent.
+- The check `customer-study` fails a study that declares no sample size, no numbered question order or no incentive and who pays it; its tests are in [checks/test_customer_study.py](checks/test_customer_study.py).
 
 ## Check it
 
@@ -105,6 +118,9 @@ master also renders the site, [tewf.github.io/business-customer](https://tewf.gi
 
 | Part | Summary |
 |---|---|
+| [evidence](evidence/) | the first review, a first pass of 40 sources, ending on the baseline B1, and the bibliography |
+| [shapes](shapes/) | the shape of a customer study, with a filled fixture |
+| [checks/local](checks/local/) | the check that a study declares its sample, its question order and its incentive |
 | [decisions](decisions/) | one record per choice that shapes this repository, each opening with the decision in one sentence |
 
 ## Licence

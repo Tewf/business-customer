@@ -1,12 +1,15 @@
 # Customer and demand
 
-> Customer discovery and demand estimation: interviews and surveys with their biases, experiments, discrete choice models, segmentation, and a protocol shape for a customer study. Scope only; the review is not started.
+> Customer discovery and demand estimation: interviews and surveys with their biases, experiments, discrete choice models, segmentation, and a protocol shape for a customer study. The first review is written, a first pass of 40 sources ending on the baseline B1.
 
 Each page's markdown source is served at the same path with a .md extension. This index is written by hand; AGENTS.md says to keep it in step.
 
 ## The repository
 
-- [Customer and demand](https://tewf.github.io/business-customer/README.md): the scope, the first job and the questions its review must answer
+- [Customer and demand](https://tewf.github.io/business-customer/README.md): the scope, what the review found and the baseline
+- [Evidence](https://tewf.github.io/business-customer/evidence/README.md): the review, the bibliography and the claims with their grades
+- [Customer demand review](https://tewf.github.io/business-customer/evidence/customer-demand/README.md): frame, protocol, sources, review, state of the art, position, against and the baseline B1
+- [Customer study shape](https://tewf.github.io/business-customer/shapes/customer-study.md): the protocol of a study, with a filled fixture and a check
 - [Decisions](https://tewf.github.io/business-customer/decisions/README.md): one record per choice that shapes the repository
 
 ## Contributing

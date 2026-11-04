@@ -7,8 +7,8 @@ read its [standard.md](https://github.com/Tewf/reader-ergonomics/blob/2e5b6f0c3e
 
 1. Read the standard at the release this repository checks against (v1.21.0), and the front page's scope: what is in,
    what is out, and which neighbour holds what is out.
-2. The first job is the review on the front page, in its five steps, staged outside this repository until it names its
-   baseline; it is finished when it can. The repository may be renamed at the frame step.
+2. The first review is in [evidence/customer-demand](evidence/customer-demand/) and names its baseline, B1; the next
+   work is a design document that fixes the first good, the segments and the arms.
 3. A fact that belongs to a neighbour is linked, never copied. A choice that shapes the repository gets a record in
    [decisions/](decisions/).
 
@@ -46,6 +46,7 @@ python3 checks/out/standard/checks/run.py . --tiers program,meaning --judge flag
 - Fix every error. Read every warning.
 - Answer the questions in `checks/out/needs-judgment.md` in `checks/judgments.toml`, each answer quoting in backticks
   a word or heading of its own file.
+- A customer study is written in [shapes/customer-study.md](shapes/customer-study.md) and passes the check `customer-study`.
 - Keep [llms.txt](llms.txt), [README.md](README.md) and [README.fr.md](README.fr.md) in step.
 - A pin raise goes in [CHANGELOG.md](CHANGELOG.md), not in decisions/.
 
