@@ -14,8 +14,30 @@ stylesheets = []
 stylesheets = []
 
 # The headings the standard's decision-record shape requires (reader-ergonomics v1.21.0, shapes/decision-record.md).
+# and the headings each shape of a review's files asks (reader-ergonomics-review, shapes/*.md), and the customer study's.
 [shape_conformance]
-shapes = [{ name = "decision record", files = ["decisions/0*.md"], required = ["Context", "Decision", "Consequences", "See also"] }]
+shapes = [
+  { name = "decision record", files = ["decisions/0*.md"], required = ["Context", "Decision", "Consequences", "See also"] },
+  { name = "frame", files = ["evidence/*/frame.md"], required = ["The problem in one sentence", "What the field calls it", "What practice calls it", "Does the repository's name match", "Sub-questions"] },
+  { name = "protocol", files = ["evidence/*/protocol.md"], required = ["Why grey literature", "Questions", "Existing reviews", "Formal search", "Grey search", "Stopping rule", "Selection", "Quality of grey sources", "Extraction and synthesis", "Not searched"] },
+  { name = "sources", files = ["evidence/*/sources.md"], required = ["Flow", "Formal", "Grey", "Left out"] },
+  { name = "review", files = ["evidence/*/review.md"], required = ["Strand 0"] },
+  { name = "against", files = ["evidence/*/against.md"], required = ["Against", "Disagreements", "Against the sources themselves"] },
+  { name = "state of the art", files = ["evidence/*/state-of-the-art.md"], required = ["Q1"] },
+  { name = "position", files = ["evidence/*/position.md"], required = ["Known", "Not found", "questions", "What this repository asks"] },
+  { name = "baseline", files = ["evidence/*/baseline.md"], required = ["Compared with", "lacks", "measured", "finished"] },
+  { name = "customer study", files = ["shapes/examples/*/study.md"], required = ["Question", "Sample", "Instrument", "Question order", "Incentive", "Analysis plan", "Stopping rule", "Limits"] },
+]
+
+# Each shape links, or holds, a filled example of itself.
+[shape_example]
+files = ["shapes/*.md"]
+exempt = ["shapes/README.md", "shapes/examples/*"]
+example_headings = ["Worked example"]
+
+# The studies the local check customer-study reads: a protocol declares its sample, its question order and its incentive.
+[customer_study]
+files = ["shapes/examples/*/study.md", "studies/*/study.md"]
 
 # Path questions are answered with their path quoted, so the quotes check stays strict.
 [judgment_quotes]
@@ -25,5 +47,6 @@ optional = []
 # A key names one work across the family (reader-ergonomics decision 0003); CI clones each name beside this repository.
 family = ["reader-ergonomics",
           "reader-ergonomics-review",
+          "business-pricing",
           "ai-augmented-project"]
 shared_links = []
