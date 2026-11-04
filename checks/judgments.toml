@@ -1,13 +1,83 @@
 [[answer]]
 check = "tree-shape"
-path = "checks"
-question = "2 entries: fold into the parent folder, unless this folder is one record of a collection (a job, a chapter, a topic)."
+path = "checks/local"
+question = "1 entries: fold into the parent folder, unless this folder is one record of a collection (a job, a chapter, a topic)."
 file = ""
-answer = "It stays: `checks` is the folder the extension contract names (reader-ergonomics extending.md, the layout table) for the config and the answers, and the standard's runner reads it there."
+answer = "It stays: `checks/local` is the folder the extension contract names for a repository's own checks; it holds the check `customer_study.py` and grows one module per check."
 
 [[answer]]
 check = "tree-shape"
-path = "decisions"
+path = "shapes"
 question = "2 entries: fold into the parent folder, unless this folder is one record of a collection (a job, a chapter, a topic)."
 file = ""
-answer = "It stays: `decisions` is the folder the decision-record shape names for its records; it holds the README and record 0001 today, and grows one file per choice."
+answer = "It stays: `shapes` is where an extension keeps the shapes of its genre; it holds the shape and its example, and grows one file per shape."
+
+[[answer]]
+check = "tree-shape"
+path = "shapes/examples"
+question = "1 entries: fold into the parent folder, unless this folder is one record of a collection (a job, a chapter, a topic)."
+file = ""
+answer = "It stays: `shapes/examples` is the one place for the filled examples of the shapes, as in the review genre's repository, and grows with each shape."
+
+[[answer]]
+check = "tree-shape"
+path = "shapes/examples/pre-order-interviews"
+question = "1 entries: fold into the parent folder, unless this folder is one record of a collection (a job, a chapter, a topic)."
+file = ""
+answer = "It stays: `shapes/examples/pre-order-interviews` is one record of a collection, one worked study per folder, and a second shape's example will sit beside it."
+
+[[answer]]
+check = "logical-lines"
+path = "evidence/customer-demand/protocol.md"
+question = "90 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
+file = "127380928152"
+answer = "Its role in one sentence: it records how the pool was built, from the strings to the stopping rule, so that a reader can run the search again; it has no 'and' to split on, and its tables are data, so it stays whole under `Protocol`."
+
+[[answer]]
+check = "figures-present"
+path = "evidence/customer-demand/review.md"
+question = "a long text with no figure, table or diagram: is a relation, set, quantity or process described only in words?"
+file = "76bf5f78fde7"
+answer = "No: the relations are carried by the strands, each answering one question of the frame, and every finding is one line with its figure and source, as in `Strand 3`; a figure would only restate the lists."
+
+[[answer]]
+check = "document-mode"
+path = "AGENTS.md"
+question = "reads about equally as reference and how-to: one mode per document?"
+file = "a82be3d80f88"
+answer = "One mode: it is a reference of the rules for changing this repository, and `Before handing back` is a short checklist inside that reference, not a second document."
+
+[[answer]]
+check = "document-mode"
+path = "decisions/0002-keep-the-name-and-read-a-study-protocol-by-program.md"
+question = "reads about equally as reference and how-to: one mode per document?"
+file = "e31cea5439e8"
+answer = "One mode, understanding why: `Context` gives the findings and `Decision` the choices that follow; the shape of a decision record fixes this mix."
+
+[[answer]]
+check = "document-mode"
+path = "evidence/customer-demand/frame.md"
+question = "reads about equally as reference and how-to: one mode per document?"
+file = "ac885efa80a3"
+answer = "One mode, reference: it fixes the words every other file uses, and the `Sub-questions` table is a lookup, not a procedure."
+
+[[answer]]
+check = "document-mode"
+path = "evidence/customer-demand/state-of-the-art.md"
+question = "reads about equally as how-to and reference: one mode per document?"
+file = "aa637fd43a91"
+answer = "One mode, reference: each `Q1` style table is a lookup of the record holders; nothing in it is a procedure."
+
+[[answer]]
+check = "name-content"
+path = "evidence/customer-demand/frame.md"
+question = "the name 'frame' and the opening are far apart in meaning (0.17): does the name predict the content?"
+file = "ac885efa80a3"
+answer = "The name predicts the content: `Frame` is the first step of the review and the file's shape name, and its opening states the problem and its names."
+
+[[answer]]
+check = "name-content"
+path = "evidence/customer-demand/state-of-the-art.md"
+question = "the name 'state' and the opening are far apart in meaning (0.02): does the name predict the content?"
+file = "aa637fd43a91"
+answer = "The name predicts the content: `State of the art` is the third step of the review and the file's shape name, and each section holds the records per question."
