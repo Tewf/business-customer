@@ -78,15 +78,15 @@ Database: OpenAlex, title and abstract, sorted by citations, the top 8 screened.
 
 | Id | Producer or engine | String or what was read | Result | New concept |
 |---|---|---|---|---|
-| G1 | an essay by a founder-investor | the page "Do Things that Don't Scale" | included | y |
-| G2 | a business magazine | the summary and opening of the article on the lean start-up | included | y |
-| G3 | the site of a handbook on customer conversations | the front page | included | y |
-| G4 | the site of the lean start-up method | the page of principles | included | y |
-| G5 | a usability consultancy | the article on testing with 5 users | included | y |
-| G6 | a product-coaching site | the page on the interview snapshot | included | y |
-| G7 | a university laboratory | the home page of the estimation package Biogeme | included | y |
-| G8 | the R archive CRAN | the page of the package mlogit | included | n |
-| G9 | the site of a book on online experiments | the front page | included | y |
+| G1 | an essay by a founder-investor | the page "Do Things that Don't Scale" | included, 1 page read | y |
+| G2 | a business magazine | the summary and opening of the article on the lean start-up | included, 1 page read | y |
+| G3 | the site of a handbook on customer conversations | the front page | included, 1 page read | y |
+| G4 | the site of the lean start-up method | the page of principles | included, 1 page read | y |
+| G5 | a usability consultancy | the article on testing with 5 users | included, 1 page read | y |
+| G6 | a product-coaching site | the page on the interview snapshot | included, 1 page read | y |
+| G7 | a university laboratory | the home page of the estimation package Biogeme | included, 1 page read | y |
+| G8 | the R archive CRAN | the page of the package mlogit | included, 1 page read | n |
+| G9 | the site of a book on online experiments | the front page | included, 1 page read | y |
 | G10 | the Apollo choice-modelling site | the home page | not read: a bot check answered | not run |
 | G11 | a survey-research association | its code of ethics page | not read: HTTP 403 | not run |
 | G12 | a preregistration service | its home page | not read: HTTP 403 | not run |
