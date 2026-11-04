@@ -38,7 +38,7 @@ Step 2 of the review, read on 2026-11-04. It groups the 40 sources by strand and
 
 - Across 47 experimental tests, a change in intention of d = 0.66 led to a change in behaviour of d = 0.36 (Webb 2006, abstract, secondary). Measured.
 - An incentive-aligned choice conjoint predicted out-of-sample purchases better than the hypothetical one, in a restaurant field experiment and a snack study (Ding 2005, abstract, secondary). Measured.
-- The gap on price, 21% on average for consumer goods, is [held by business-pricing](https://github.com/Tewf/business-pricing/blob/0d746beca6c5f2395e434ddbbc38c9d5a73d2cb2/evidence/willingness-to-pay/review.md) and not repeated.
+- The gap on price, 21% on average for consumer goods (Schmidt 2020, abstract, secondary), is [held by business-pricing](https://github.com/Tewf/business-pricing/blob/0d746beca6c5f2395e434ddbbc38c9d5a73d2cb2/evidence/willingness-to-pay/review.md) and not repeated.
 - A controlled experiment is the design that establishes a causal link from a change to user behaviour, say its practitioners (Kohavi 2009, abstract, secondary). Convention.
 - In a randomized trial of 116 startups, those taught to test hypotheses like scientists performed better, pivoted more and did not drop out more (Camuffo 2020, abstract, secondary). Measured.
 - The gap is measured as an effect size of intention on behaviour, or as a ratio of stated to paid; both need a behaviour observed after the answer. Convention.

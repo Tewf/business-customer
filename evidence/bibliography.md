@@ -44,6 +44,7 @@ Every work cited, once. A key is `Surname Year`; an organisation takes a title w
 | Ries 2026 Lean | Ries (2026). The Lean Startup: Methodology. Page of principles read | https://theleanstartup.com/principles |
 | Tong 2007 | Tong, Sainsbury, Craig (2007). Consolidated criteria for reporting qualitative research (COREQ): a 32-item checklist for interviews and focus groups. International Journal for Quality in Health Care. Abstract read | https://doi.org/10.1093/intqhc/mzm042 |
 | Torres 2024 | Torres (2024). The Interview Snapshot: How to Synthesize and Share What You Learned from a Single Customer Interview. Product Talk. Page read | https://www.producttalk.org/interview-snapshot/ |
+| Schmidt 2020 | Schmidt, Bijmolt (2020). Accurately measuring willingness to pay for consumer goods: a meta-analysis of the hypothetical bias. Journal of the Academy of Marketing Science 48(3), 499-518. Abstract read | https://doi.org/10.1007/s11747-019-00666-6 |
 | Tourangeau 2007 | Tourangeau, Yan (2007). Sensitive questions in surveys. Psychological Bulletin 133(5). Abstract read | https://doi.org/10.1037/0033-2909.133.5.859 |
 | Train 2009 | Train (2009). Discrete Choice Methods with Simulation, 2nd ed. Cambridge University Press. Contents page of the free online edition read | https://eml.berkeley.edu/books/choice2.html |
 | Webb 2006 | Webb, Sheeran (2006). Does changing behavioral intentions engender behavior change? A meta-analysis of the experimental evidence. Psychological Bulletin 132(2). Abstract read | https://doi.org/10.1037/0033-2909.132.2.249 |
