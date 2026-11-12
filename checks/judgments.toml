@@ -30,14 +30,14 @@ answer = "It stays: `shapes/examples/pre-order-interviews` is one record of a co
 check = "logical-lines"
 path = "evidence/customer-demand/protocol.md"
 question = "90 logical lines, past the trigger of 80. State this file's role in one sentence. If the sentence needs 'and', split the file; if not, it may stay."
-file = "127380928152"
+file = "1b0c0351eb5d"
 answer = "Its role in one sentence: it records how the pool was built, from the strings to the stopping rule, so that a reader can run the search again; it has no 'and' to split on, and its tables are data, so it stays whole under `Protocol`."
 
 [[answer]]
 check = "figures-present"
 path = "evidence/customer-demand/review.md"
 question = "a long text with no figure, table or diagram: is a relation, set, quantity or process described only in words?"
-file = "76bf5f78fde7"
+file = "b4df1142ffab"
 answer = "No: the relations are carried by the strands, each answering one question of the frame, and every finding is one line with its figure and source, as in `Strand 3`; a figure would only restate the lists."
 
 [[answer]]
