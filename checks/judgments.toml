@@ -81,3 +81,24 @@ path = "evidence/customer-demand/state-of-the-art.md"
 question = "the name 'state' and the opening are far apart in meaning (0.02): does the name predict the content?"
 file = "aa637fd43a91"
 answer = "The name predicts the content: `State of the art` is the third step of the review and the file's shape name, and each section holds the records per question."
+
+[[answer]]
+check = "co-change"
+path = "AGENTS.md"
+question = "changed together with decisions/README.md in 3 commits (100% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
+file = "86e208f4edae"
+answer = "They stay apart: `AGENTS.md` and `decisions/README.md` share no fact. Both hold a link to the standard at its pinned commit, so every pin move rewrites both in one commit; the standard-pin and standard-links checks keep those copies equal, so the coupling is the pin's, not the files'."
+
+[[answer]]
+check = "co-change"
+path = "README.fr.md"
+question = "changed together with decisions/README.md in 3 commits (100% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
+file = "158ca8f38dac"
+answer = "They stay apart: `README.fr.md` and `decisions/README.md` share no fact. Both hold a link to the standard at its pinned commit, so every pin move rewrites both in one commit; the standard-pin and standard-links checks keep those copies equal, so the coupling is the pin's, not the files'."
+
+[[answer]]
+check = "co-change"
+path = "README.md"
+question = "changed together with decisions/README.md in 3 commits (100% of the rarer one's), from another folder: should they share a folder, or should one link to the other?"
+file = "a1c48920c49a"
+answer = "They stay apart: `README.md` and `decisions/README.md` share no fact. Both hold a link to the standard at its pinned commit, so every pin move rewrites both in one commit; the standard-pin and standard-links checks keep those copies equal, so the coupling is the pin's, not the files'."
