@@ -2,7 +2,7 @@
 
 **Decision:** The repository keeps its name after the frame step. The baseline of its first review is B1, a protocol-fixed study with a choice arm against an unstructured round of interviews, and a program checks that a study declares its sample, question order and incentive.
 
-**Status:** accepted, 2026-11-04. **Shape:** [decision record](https://github.com/Tewf/reader-ergonomics/blob/65e42472e2d4cbfd994c2a86e95a47e5dc7301ca/shapes/decision-record.md).
+**Status:** accepted, 2026-11-04. **Shape:** [decision record](https://github.com/Tewf/reader-ergonomics/blob/722cfa4b0ad65968e2c7e6fdc07057c9bab0e172/shapes/decision-record.md).
 
 ## Context
 
